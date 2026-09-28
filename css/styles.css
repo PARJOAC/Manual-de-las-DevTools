@@ -71,9 +71,9 @@ html[data-theme="dark"] header {
 
 #display {
   display: flex;
-  justify-content: right;
-  align-items: right;
-  text-align: right;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #buttons {

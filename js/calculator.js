@@ -13,5 +13,5 @@ buttons.addEventListener("click", (e) => {
     result.textContent += e.target.textContent;
   }
 
-  result.style.textAlign = "right";
+  result.style.textAlign = "center";
 });
