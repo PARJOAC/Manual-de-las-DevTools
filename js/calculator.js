@@ -1,3 +1,6 @@
+// Importar la funcion del botón del pánico
+import { buttonActivated } from "./panic.js";
+
 // Obtenemos los elementos del DOM donde se muestra el resultado y el contenedor de botones
 const result = document.getElementById("result");
 const buttons = document.getElementById("buttons");
@@ -14,6 +17,10 @@ buttons.addEventListener("click", (e) => {
     let texto = result.textContent.replace("x", "*") || result.textContent;
     let resultado = eval(texto);
 
+    if (resultado === 5) {
+      buttonActivated("ERROR");
+      result.textContent = result;
+    }
     // Si el resultado es válido, lo mostramos; si no, mostramos "Error"
     if (resultado != NaN) result.textContent = resultado;
     else result.textContent = "Error";

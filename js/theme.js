@@ -19,7 +19,10 @@ boton.addEventListener("click", (a) => {
   console.info(
     `Has hecho click en las coordenadas: X: ${a.pageX} Y: ${a.pageY}`,
   );
+  changeTheme();
+});
 
+export function changeTheme() {
   // Alterna el tema actual entre "light" y "dark"
   const nuevoTema =
     document.documentElement.getAttribute("data-theme") === "light"
@@ -33,4 +36,4 @@ boton.addEventListener("click", (a) => {
 
   // Aplica el nuevo tema en el atributo global del documento
   document.documentElement.setAttribute("data-theme", nuevoTema);
-});
+}
