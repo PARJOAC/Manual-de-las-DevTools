@@ -1,5 +1,5 @@
 // Seleccionamos el botón de pánico del DOM mediante su ID
-const botonPanico = document.getElementById("botonPanico");
+const botonPanico = document.getElementById("panico");
 
 // Evento para cuando se hace click en el boton de panico
 botonPanico.addEventListener("click", () => {
