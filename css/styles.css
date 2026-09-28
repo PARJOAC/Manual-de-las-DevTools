@@ -145,3 +145,27 @@ html[data-theme="dark"] #calculator button {
   background-color: orange;
   color: white;
 }
+
+@media (max-width: 768px) {
+  #calculator {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  #result {
+    font-size: 2em;
+  }
+
+  #cambiarTema {
+    width: 8%;
+    padding-right: 4%;
+  }
+
+  #botonPanico p {
+    font-size: 24px;
+  }
+
+  #botonPanico img {
+    height: 60%;
+  }
+}

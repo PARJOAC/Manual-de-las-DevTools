@@ -19,6 +19,7 @@ buttons.addEventListener("click", (e) => {
 
     if (resultado === 5) {
       buttonActivated("ERROR");
+      alert("ERROR INTERNO");
       result.textContent = result;
     }
     // Si el resultado es válido, lo mostramos; si no, mostramos "Error"

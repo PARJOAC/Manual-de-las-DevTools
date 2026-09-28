@@ -2,10 +2,10 @@
 import { changeTheme } from './theme.js';
 
 // Seleccionamos el botón de pánico del DOM
-const botonPanico = document.getElementById("panico");
+const botonPanico = document.getElementById("panic");
 
 // Evento para cuando se hace click en el boton de panico
-botonPanico.addEventListener("click", buttonActivated());
+botonPanico.addEventListener("click", () => buttonActivated("DEFAULT"));
 
 export function buttonActivated(text) {
   if (text === "DEFAULT") {
