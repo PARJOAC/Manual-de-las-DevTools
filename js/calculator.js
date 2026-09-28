@@ -2,7 +2,7 @@
 const result = document.getElementById("result");
 const buttons = document.getElementById("buttons");
 
-// Escuchamos los clics dentro del contenedor de botones (delegación de eventos)
+// Escuchamos los clics dentro del contenedor de botones
 buttons.addEventListener("click", (e) => {
   // Si se presiona el botón "CE", limpiamos la pantalla
   if (e.target.textContent === "CE") {
