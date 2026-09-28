@@ -39,10 +39,18 @@ html[data-theme="dark"] header {
   color: white;
 }
 
+#botonPanico p {
+  display: flex;
+  padding-top: 3%;
+  padding-right: 2%;
+  font-weight: bold;
+  font-size: 32px;
+}
 #botonPanico {
   display: flex;
   justify-content: center;
   padding-top: 10px;
+  padding-left: 20px;
   height: 200px;
 }
 
