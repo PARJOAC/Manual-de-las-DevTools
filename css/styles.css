@@ -70,6 +70,7 @@ html[data-theme="dark"] header {
   flex-direction: column;
   background-color: orange;
   border-color: #7a7272;
+  letter-spacing: 10px;
   border-radius: 15px;
   width: 90%;
   height: 45px;
