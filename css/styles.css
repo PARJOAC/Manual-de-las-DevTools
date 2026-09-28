@@ -1,48 +1,137 @@
 html {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  align-items: center;
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-    background-color: #f5f5f5;
-    border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
 }
 
 #cambiarTema {
-    width: 1.5%;
-    margin-left: 1%;
+  width: 1.5%;
+  margin-left: 1%;
 }
 
 #cambiarTema:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 html[data-theme="light"] {
-    background-color: white;
-    color: rgb(48, 46, 46);
+  background-color: white;
+  color: rgb(48, 46, 46);
 }
 
-html[data-theme="dark"] {
-    background-color: rgb(48, 46, 46);
-    color: white;
-}
-
+html[data-theme="dark"],
 html[data-theme="dark"] header {
-    background-color: rgb(48, 46, 46);
+  background-color: rgb(48, 46, 46);
+  color: white;
 }
 
 #botonPanico {
-    display: flex;
-    justify-content: center;
-    height: 200px;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #696565;
+  width: 25%;
+  border-radius: 15px;
+  margin: 40px auto;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  background-color: orange;
+  border-color: #7a7272;
+  border-radius: 15px;
+  width: 90%;
+  height: 45px;
+  font-size: 2.5em;
+  padding-right: 10px;
+}
+
+#display {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  text-align: right;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#file1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+#file2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#file3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#file4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#calculator button {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 15px;
+  background-color: #f5f5f5;
+  font-size: 1.5em;
+}
+
+html[data-theme="dark"] #calculator,
+html[data-theme="dark"] #file1,
+html[data-theme="dark"] #file2,
+html[data-theme="dark"] #file3,
+html[data-theme="dark"] #file4 {
+  background-color: rgb(61, 56, 56);
+  color: white;
+}
+
+html[data-theme="dark"] #calculator button {
+  background-color: orange;
+  color: white;
 }

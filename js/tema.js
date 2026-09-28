@@ -33,7 +33,4 @@ boton.addEventListener("click", (a) => {
 
   // Aplica el nuevo tema en el atributo global del documento
   document.documentElement.setAttribute("data-theme", nuevoTema);
-
-  // Muestra una alerta indicando cuál es el tema actual
-  alert(`El tema actual es: ${nuevoTema === "dark" ? "Oscuro" : "Claro"}`);
 });
