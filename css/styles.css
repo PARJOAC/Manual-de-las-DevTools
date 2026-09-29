@@ -1,13 +1,11 @@
-html {
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  align-items: center;
 }
 
 header {
@@ -22,12 +20,10 @@ header {
 #cambiarTema {
   width: 1.5%;
   margin-left: 1%;
-}
-
-#cambiarTema:hover {
   cursor: pointer;
 }
 
+/* Temas */
 html[data-theme="light"] {
   background-color: white;
   color: rgb(48, 46, 46);
@@ -39,19 +35,20 @@ html[data-theme="dark"] header {
   color: white;
 }
 
-#botonPanico p {
-  display: flex;
-  padding-top: 3%;
-  padding-right: 2%;
-  font-weight: bold;
-  font-size: 32px;
-}
 #botonPanico {
   display: flex;
   justify-content: center;
   padding-top: 10px;
   padding-left: 20px;
   height: 200px;
+}
+
+#botonPanico p {
+  display: flex;
+  padding-top: 3%;
+  padding-right: 2%;
+  font-weight: bold;
+  font-size: 32px;
 }
 
 #calculator {
@@ -85,40 +82,30 @@ html[data-theme="dark"] header {
   text-align: center;
 }
 
-#buttons {
+#buttons,
+#file1,
+#file2,
+#file3,
+#file4 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#file1 {
-  display: flex;
+#buttons {
+  flex-direction: column;
+}
+
+#file1,
+#file2,
+#file3 {
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   margin-top: 15px;
 }
 
-#file2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-#file3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
 #file4 {
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -132,6 +119,7 @@ html[data-theme="dark"] header {
   font-size: 1.5em;
 }
 
+/* Estilos oscuros para la calculadora y filas */
 html[data-theme="dark"] #calculator,
 html[data-theme="dark"] #file1,
 html[data-theme="dark"] #file2,
@@ -144,4 +132,29 @@ html[data-theme="dark"] #file4 {
 html[data-theme="dark"] #calculator button {
   background-color: orange;
   color: white;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  #calculator {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  #result {
+    font-size: 2em;
+  }
+
+  #cambiarTema {
+    width: 8%;
+    padding-right: 4%;
+  }
+
+  #botonPanico p {
+    font-size: 24px;
+  }
+
+  #botonPanico img {
+    height: 60%;
+  }
 }

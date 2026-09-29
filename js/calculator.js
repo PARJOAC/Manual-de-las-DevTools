@@ -9,6 +9,7 @@ const buttons = document.getElementById("buttons");
 buttons.addEventListener("click", (e) => {
   // Si se presiona el botón "CE", limpiamos la pantalla
   if (e.target.textContent === "CE") {
+    console.warn("Limpiando calculadora...");
     result.textContent = "";
   }
   // Si se presiona el botón "=", calculamos el resultado
@@ -19,6 +20,7 @@ buttons.addEventListener("click", (e) => {
 
     if (resultado === 5) {
       buttonActivated("ERROR");
+      alert("ERROR INTERNO");
       result.textContent = result;
     }
     // Si el resultado es válido, lo mostramos; si no, mostramos "Error"
